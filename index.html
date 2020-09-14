@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,600&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <section class = 'conteiner'>
+      <header class = 'head'>
+        <a href="#">
+          <img class= 'logo' src="img/logo.png" alt="logo">
+        </a>
+        <nav>
+          <ul class='navigation'>
+            <li> <a href="">Home</a> </li>
+            <li> <a href="#">Products</a></li>
+            <li> <a href="#">What's New</a></li>
+            <li> <a href="#">Newsletter</a></li>
+            <li> <a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class='content'>
+        <div class='main-text'>
+          <h1>that's what <br> <span>i like</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Enim assumenda facilis est illo, expedita temporibus, voluptatum atque quos,
+            a perferendis soluta ab, et possimus optio officiis eius dolores quae dolor.</p>
+          <a href="#">view all products</a>
+        </div>
+        <div class="imgBox">
+          <img class='pepsi' src="img/pepsi001.png" alt="pepsi">
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="img/pepsi001.png" onclick="imgSlider('img/pepsi001.png'); changeBgColor('#0062be')" alt="pepsi1"></li>
+        <li><img src="img/pepsi002.png" onclick="imgSlider('img/pepsi002.png'); changeBgColor('#e60c2c')" alt="pepsi2"></li>
+        <li><img src="img/pepsi003.png" onclick="imgSlider('img/pepsi003.png'); changeBgColor('#1e1e1e')" alt="pepsi3"></li>
+      </ul>
+      <ul class='sci'>
+        <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.conteiner');
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
